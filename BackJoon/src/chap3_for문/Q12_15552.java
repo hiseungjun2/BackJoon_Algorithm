@@ -24,12 +24,16 @@ public class Q12_15552 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
+		int x = Integer.parseInt(br.readLine());	// xมู ภิทย
 		
+		for (int i = 0; i < x; i++) {
+			String temp = br.readLine();
+			String[] array = temp.split(" ");
+			bw.write(Integer.parseInt(array[0]) + Integer.parseInt(array[1]) + "\n");
+		}
 		
 		bw.flush();
 		bw.close();
-		
-
 	}
 
 }
